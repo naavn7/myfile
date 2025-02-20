@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body align="center">
+    <h1>Registration Form</h1>
+    <form action="http://127.0.0.1:5500/login.html" target="_blank" >
+        <fieldset> 
+            <legend><b>Personal Information</b></legend>
+        First Name : <input type="text" required> <br><br>
+        Last Name : <input type="text"> <br><br>
+        Data of Birth : <input type="date"> <br><br>
+        <p>Choose Your Gender</p>
+        <input type="radio" name="gender"> Male <br>
+        <input type="radio" name="gender"> Female <br>
+        <input type="radio" name="gender"> Others <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Create Password</b></legend>
+    Password : <input type="password"> <br><br>
+    Confirm Password : <input type="password"> <br><br>
+    </fieldset> 
+
+    <fieldset>
+        <legend><b>Contact Information</b></legend>
+        Email Address : <input type="email" required placeholder="example@gmail.com"> <br><br>
+
+        Mobile Number :<select>
+            <option value="">+91</option>
+            <option value="">+81</option>
+            <option value="">+11</option>
+        </select> <input type="tel" pattern="[0-9]{10}"> <br><br>
+
+        OTP : <input type="tel" pattern="[0-9]{4}"> <br><br>
+        Location : <input type="text"> <br><br>
+        Address <textarea style="resize: none;"></textarea> <br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Other Information</b></legend>
+
+        Profile Pic : <input type="file" accept="image/png"> <br><br>
+        Work Experience : <input type="number" min="0" max="5"> <br><br>
+        <span>Choose Your College</span>
+        <input list="college">
+        <datalist id="college">
+            <option value="JNTU"></option>
+            <option value="OU"></option>
+            <option value="KLU"></option>
+            <option value="MRITS"></option>
+            <option value="MLR"></option>
+            <option value="BVRIT"></option>
+            <option value="NNRG"></option>
+            <option value="VJIET"></option>
+            <option value="NNRG"></option>
+            <option value="GNIT"></option>
+        </datalist> <br><br>
+        <span>Choose Your Stream</span>
+        <select>
+            <option value="">CSE</option>
+            <option value="">Mech</option>
+            <option value="">ECE</option>
+            <option value="">EEE</option>
+            <option value="">Civil</option>
+        </select> <br><br>
+        <span>Year of Passing :</span>
+        <select>
+            <option value="">2024</option>
+            <option value="">2023</option>
+            <option value="">2022</option>
+        </select>
+
+
+        <p>Select Skills</p>
+        <input type="checkbox">&nbsp; HTML<br>
+        <input type="checkbox">&nbsp;  CSS<br>
+        <input type="checkbox">&nbsp; MySQL<br>
+        <input type="checkbox">&nbsp; Java<br>
+        <input type="checkbox">&nbsp; Python<br>
+        <input type="checkbox">&nbsp; Springboot<br><br>
+
+    </fieldset><br>
+        <input type="checkbox" required>Accepting the terms and Conditions <br><br>
+        <a href="http://127.0.0.1:5500/login.html" target="_blank">
+            already a user Sign in
+        </a> <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+        
+    </form>
+</body>
+</html>
